@@ -18,6 +18,9 @@ form input {
 .col h2 {
   text-align: center;
 }
+.desc-text {
+  text-align: center;
+}
 .row {
   display: flex;
   justify-content: center;

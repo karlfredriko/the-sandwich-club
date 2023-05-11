@@ -2,11 +2,11 @@
 <main class="row">
   <div class="col top top-space">
     <% if (users.length > 0) { %>
-    <h2>Userlist</h2>
+    <h2>Users</h2>
     <div>
       <% if (users.length !== 1) { %>
       <div class="sorting-container">
-        <p>Sortera listan:</p>
+        <p>Sort:</p>
         <form action="/users/sortasc" method="get">
           <button>Ascending</button>
         </form>
