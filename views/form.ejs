@@ -1,0 +1,45 @@
+<%- include("head") %>
+<main class="row">
+  <div class="col top-space">
+    <h2>Register new user</h2>
+    <form action="/form" method="post">
+      <input placeholder="Name" type="text" id="name" name="name" required />
+      <input
+        placeholder="Username"
+        type="text"
+        id="user_name"
+        name="user_name"
+        required
+      />
+      <input
+        placeholder="Email"
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
+      <input
+        placeholder="Phone number"
+        type="tel"
+        id="phone_no"
+        name="phone_no"
+        required
+      />
+      <label for="user_joined">Joined at:</label>
+      <input type="date" id="user_joined" name="user_joined" required />
+      <input
+        placeholder="Favorite sandwich"
+        type="text"
+        id="favorite_sandwich"
+        name="favorite_sandwich"
+        required
+      />
+      <button>Create user</button>
+    </form>
+  </div>
+  <div class="col top-space">
+    <img src="/assets/sando_2.png" alt="Another sandwich" />
+    <img class="offset" src="/assets/sando_3.png" alt="The third sandwich" />
+  </div>
+</main>
+<%- include("footer") %>

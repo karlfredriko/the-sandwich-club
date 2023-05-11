@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+main {
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+}
+form input {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin-bottom: 1rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.col h2 {
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.desc-text {
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+img {
+  width: 250px;
+  align-self: center;
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.offset {
+  position: relative;
+  left: 1.5rem;
+}
+.top-space {
+  padding-top: 2rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  border-bottom: solid 2px hsl(33, 100%, 95%);
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  margin-left: 2rem;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+}
+.nav-list li {
+  margin-right: 1rem;
+}
+.btn-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.sorting-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sorting-container form {
+  margin-left: 1rem;
+}
+footer {
+  border-top: solid 2px hsl(0, 59%, 30%);
+  background-color: hsl(0, 59%, 41%);
+  position: fixed;
+  margin-top: 2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: bisque;
+}
+footer div {
+  padding: 1rem 2rem;
+  text-align: end;
+}
+footer div p {
+  display: inline;
+}
+input {
+  height: 1.5rem;
+}

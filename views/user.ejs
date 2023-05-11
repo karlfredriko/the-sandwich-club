@@ -1,0 +1,24 @@
+<%- include ("head") %>
+<main class="row">
+  <div class="col">
+    <h2>User information</h2>
+    <h3><%= user.user_name %> - <%= user.name %></h3>
+    <p>Email: <%= user.email %></p>
+    <p>Phone: <%= user.phone_no %></p>
+    <p>Joined: <%= user.user_joined.toDateString() %></p>
+    <p>Favorite Sandwich: <%= user.favorite_sandwich %></p>
+    <div class="btn-container">
+      <form action="/user/<%= user._id %>/delete" method="post">
+        <button>Delete user</button>
+      </form>
+      <form action="/user/<%= user._id %>/update" method="get">
+        <button>Update user</button>
+      </form>
+    </div>
+  </div>
+  <div class="col top-space">
+    <img src="/assets/sando_4.png" alt="Another sandwich" />
+    <img class="offset" src="/assets/sando_5.png" alt="Sandwich no five" />
+  </div>
+</main>
+<%- include ("footer") %>

@@ -1,0 +1,18 @@
+[
+  {
+    "user_name": "sandwich4ever",
+    "name": "Karl-Fredrik",
+    "email": "100mackor@hotmail.com",
+    "phone_no": "070-999999",
+    "user_joined": new Date(),
+    "favorite_sandwich": "PB&J"
+  },
+  {
+    "user_name": "sandwichDestroyer",
+    "name": "Joel",
+    "email": "joel@email.com",
+    "phone_no": "070-0000000",
+    "user_joined": new Date(),
+    "favorite_sandwich": "Ostmacka med gurka"
+  }
+]

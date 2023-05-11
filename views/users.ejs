@@ -1,0 +1,33 @@
+<%- include ("head") %>
+<main class="row">
+  <div class="col top top-space">
+    <% if (users.length > 0) { %>
+    <h2>Userlist</h2>
+    <div>
+      <% if (users.length !== 1) { %>
+      <div class="sorting-container">
+        <p>Sortera listan:</p>
+        <form action="/users/sortasc" method="get">
+          <button>Ascending</button>
+        </form>
+        <form action="/users/sortdesc" method="get">
+          <button>Descending</button>
+        </form>
+      </div>
+      <hr />
+      <% } %>
+    </div>
+    <% users.forEach((user) => { %>
+    <li>
+      <a href="/user/<%= user._id %>"> <%= user.user_name%> </a>
+    </li>
+    <% }); %> <% } else { %>
+    <h2>No users yet:(</h2>
+    <% } %>
+  </div>
+  <div class="col top-space">
+    <img src="/assets/sando_3.png" alt="Another sandwich" />
+    <img class="offset" src="/assets/sando_5.png" alt="A sandwich" />
+  </div>
+</main>
+<%- include ("footer") %>

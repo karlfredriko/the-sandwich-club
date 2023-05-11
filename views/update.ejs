@@ -1,0 +1,56 @@
+<%- include("head") %>
+<main class="row">
+  <div class="col">
+    <h2>Register new user</h2>
+    <form action="/user/<%= user._id %>/update" method="post">
+      <input
+        placeholder="Name"
+        type="text"
+        id="name"
+        name="name"
+        value="<%= user.name %>"
+      />
+      <input
+        placeholder="Username"
+        type="text"
+        id="user_name"
+        name="user_name"
+        value="<%= user.user_name %>"
+      />
+      <input
+        placeholder="Email"
+        type="email"
+        id="email"
+        name="email"
+        value="<%= user.email %>"
+      />
+      <input
+        placeholder="Phone number"
+        type="tel"
+        id="phone_no"
+        name="phone_no"
+        value="<%= user.phone_no %>"
+      />
+      <label for="user_joined">Joined at:</label>
+      <input
+        type="date"
+        id="user_joined"
+        name="user_joined"
+        value="<%= user.user_joined.toISOString().slice(0, 10) %>"
+      />
+      <input
+        placeholder="Favorite sandwich"
+        type="text"
+        id="favorite_sandwich"
+        name="favorite_sandwich"
+        value="<%= user.favorite_sandwich %>"
+      />
+      <button>Update user</button>
+    </form>
+  </div>
+  <div class="col top-space">
+    <img src="/assets/sando_2.png" alt="Another sandwich" />
+    <img class="offset" src="/assets/sando_4.png" alt="Sandwich no four" />
+  </div>
+</main>
+<%- include("footer") %>
