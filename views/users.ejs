@@ -7,6 +7,9 @@
       <% if (users.length !== 1) { %>
       <div class="sorting-container">
         <p>Sort:</p>
+        <form action="/users" method="get">
+          <button>Default</button>
+        </form>
         <form action="/users/sortasc" method="get">
           <button>Ascending</button>
         </form>
@@ -22,7 +25,10 @@
       <a href="/user/<%= user._id %>"> <%= user.name%> </a>
     </li>
     <% }); %> <% } else { %>
-    <h2>No users yet:(</h2>
+    <h2>Become our first user!</h2>
+    <form class="row" action="/form" method="get">
+      <button>Register</button>
+    </form>
     <% } %>
   </div>
   <div class="col top-space">
