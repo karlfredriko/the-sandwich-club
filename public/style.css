@@ -3,7 +3,7 @@ body {
 }
 main {
   padding: 0 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 form input {
   width: 100%;
@@ -87,12 +87,21 @@ footer {
   width: 100%;
   color: bisque;
 }
+.adress {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.copy {
+  align-self: end;
+}
 footer div {
-  padding: 1rem 2rem;
-  text-align: end;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
 }
 footer div p {
-  display: inline;
+  margin: 0;
 }
 input {
   height: 1.5rem;

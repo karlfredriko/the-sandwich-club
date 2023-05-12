@@ -34,7 +34,7 @@ app.get("/users/sortasc", async (req, res) => {
   const users = await userList
     .find({})
     .collation({ locale: "en" })
-    .sort({ user_name: 1 })
+    .sort({ name: 1 })
     .toArray();
   res.render("users", { title, users });
 });
@@ -43,7 +43,7 @@ app.get("/users/sortdesc", async (req, res) => {
   const users = await userList
     .find({})
     .collation({ locale: "en" })
-    .sort({ user_name: -1 })
+    .sort({ name: -1 })
     .toArray();
   res.render("users", { title, users });
 });

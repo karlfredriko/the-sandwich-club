@@ -19,7 +19,7 @@
     </div>
     <% users.forEach((user) => { %>
     <li>
-      <a href="/user/<%= user._id %>"> <%= user.user_name%> </a>
+      <a href="/user/<%= user._id %>"> <%= user.name%> </a>
     </li>
     <% }); %> <% } else { %>
     <h2>No users yet:(</h2>
